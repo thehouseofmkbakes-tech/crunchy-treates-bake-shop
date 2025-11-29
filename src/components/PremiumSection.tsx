@@ -1,16 +1,19 @@
 import ProductCard from './ProductCard';
+import premiumCookies from '@/assets/premium-cookies.jpg';
+import gheeBiscuit from '@/assets/ghee-biscuit.jpg';
+import nuttyCookies from '@/assets/nutty-cookies.jpg';
 
 const PremiumSection = () => {
   const premiumProducts = [
-    { name: 'Jeera Cookies', price: 100 },
-    { name: 'Karachi Cookies', price: 100 },
-    { name: 'Ghee Biscuit', price: 120 },
+    { name: 'Jeera Cookies', price: 100, image: premiumCookies },
+    { name: 'Karachi Cookies', price: 100, image: premiumCookies },
+    { name: 'Ghee Biscuit', price: 120, image: gheeBiscuit },
   ];
 
   const nuttyProducts = [
-    { name: 'Nut Cookies', price: 150 },
-    { name: 'Ghee Nutty Cookies', price: 150 },
-    { name: 'Choco Chips Cookies', price: 150 },
+    { name: 'Nut Cookies', price: 150, image: nuttyCookies },
+    { name: 'Ghee Nutty Cookies', price: 150, image: nuttyCookies },
+    { name: 'Choco Chips Cookies', price: 150, image: nuttyCookies },
   ];
 
   return (
@@ -32,6 +35,7 @@ const PremiumSection = () => {
               name={product.name}
               price={product.price}
               variant="premium"
+              image={product.image}
             />
           ))}
         </div>
@@ -47,6 +51,7 @@ const PremiumSection = () => {
                 name={product.name}
                 price={product.price}
                 variant="premium"
+                image={product.image}
               />
             ))}
           </div>
