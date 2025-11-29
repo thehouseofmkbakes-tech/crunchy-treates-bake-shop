@@ -1,12 +1,13 @@
 import ProductCard from './ProductCard';
+import milletCookies from '@/assets/millet-cookies.jpg';
 
 const HealthierSection = () => {
   const healthierProducts = [
-    { name: 'Jowar Cookies', price: 'Price on request' },
-    { name: 'Multi Millet Cookies', price: 150 },
-    { name: 'Ragi Cookies', price: 150 },
-    { name: 'Foxtail Millet (Thenai) Cookies', price: 160 },
-    { name: 'Pearl Millet (Kambu) Jeera Sweet & Spicy Cookies', price: 150 },
+    { name: 'Jowar Cookies', price: 'Price on request', image: milletCookies },
+    { name: 'Multi Millet Cookies', price: 150, image: milletCookies },
+    { name: 'Ragi Cookies', price: 150, image: milletCookies },
+    { name: 'Foxtail Millet (Thenai) Cookies', price: 160, image: milletCookies },
+    { name: 'Pearl Millet (Kambu) Jeera Sweet & Spicy Cookies', price: 150, image: milletCookies },
   ];
 
   return (
@@ -28,6 +29,7 @@ const HealthierSection = () => {
               name={product.name}
               price={product.price}
               variant="healthier"
+              image={product.image}
             />
           ))}
         </div>
