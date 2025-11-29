@@ -3,11 +3,41 @@ import milletCookies from '@/assets/millet-cookies.jpg';
 
 const HealthierSection = () => {
   const healthierProducts = [
-    { name: 'Jowar Cookies', price: 'Price on request', image: milletCookies },
-    { name: 'Multi Millet Cookies', price: 150, image: milletCookies },
-    { name: 'Ragi Cookies', price: 150, image: milletCookies },
-    { name: 'Foxtail Millet (Thenai) Cookies', price: 160, image: milletCookies },
-    { name: 'Pearl Millet (Kambu) Jeera Sweet & Spicy Cookies', price: 150, image: milletCookies },
+    { 
+      name: 'Jowar Cookies', 
+      price: 'Price on request', 
+      image: milletCookies,
+      ingredients: ['Jowar flour', 'Jaggery', 'Ghee', 'Cardamom'],
+      healthBenefits: ['Gluten-free option', 'High in protein & fiber', 'Helps maintain blood sugar levels']
+    },
+    { 
+      name: 'Multi Millet Cookies', 
+      price: 150, 
+      image: milletCookies,
+      ingredients: ['Ragi', 'Jowar', 'Bajra', 'Foxtail millet', 'Jaggery', 'Ghee'],
+      healthBenefits: ['Rich in calcium & iron', 'Complete protein source', 'Boosts immunity']
+    },
+    { 
+      name: 'Ragi Cookies', 
+      price: 150, 
+      image: milletCookies,
+      ingredients: ['Ragi flour', 'Jaggery', 'Ghee', 'Sesame seeds'],
+      healthBenefits: ['High in calcium', 'Good for bone health', 'Natural relaxant']
+    },
+    { 
+      name: 'Foxtail Millet (Thenai) Cookies', 
+      price: 160, 
+      image: milletCookies,
+      ingredients: ['Foxtail millet flour', 'Honey', 'Coconut oil', 'Nuts'],
+      healthBenefits: ['Balances blood sugar', 'Rich in antioxidants', 'Promotes heart health']
+    },
+    { 
+      name: 'Pearl Millet (Kambu) Jeera Sweet & Spicy Cookies', 
+      price: 150, 
+      image: milletCookies,
+      ingredients: ['Pearl millet flour', 'Cumin seeds', 'Jaggery', 'Chili flakes', 'Ghee'],
+      healthBenefits: ['Keeps you warm', 'Aids digestion', 'Rich in magnesium']
+    },
   ];
 
   return (
@@ -30,6 +60,8 @@ const HealthierSection = () => {
               price={product.price}
               variant="healthier"
               image={product.image}
+              ingredients={product.ingredients}
+              healthBenefits={product.healthBenefits}
             />
           ))}
         </div>
