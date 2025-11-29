@@ -5,15 +5,51 @@ import nuttyCookies from '@/assets/nutty-cookies.jpg';
 
 const PremiumSection = () => {
   const premiumProducts = [
-    { name: 'Jeera Cookies', price: 100, image: premiumCookies },
-    { name: 'Karachi Cookies', price: 100, image: premiumCookies },
-    { name: 'Ghee Biscuit', price: 120, image: gheeBiscuit },
+    { 
+      name: 'Jeera Cookies', 
+      price: 100, 
+      image: premiumCookies,
+      ingredients: ['Wheat flour', 'Pure ghee', 'Cumin seeds', 'Sugar', 'Baking powder'],
+      healthBenefits: ['Rich in dietary fiber', 'Contains cumin for digestion', 'Made with pure ghee']
+    },
+    { 
+      name: 'Karachi Cookies', 
+      price: 100, 
+      image: premiumCookies,
+      ingredients: ['Wheat flour', 'Butter', 'Sugar', 'Cardamom', 'Pistachios'],
+      healthBenefits: ['Traditional recipe', 'Natural cardamom flavor', 'Energy-rich nuts']
+    },
+    { 
+      name: 'Ghee Biscuit', 
+      price: 120, 
+      image: gheeBiscuit,
+      ingredients: ['Wheat flour', 'Pure cow ghee', 'Jaggery', 'Cardamom'],
+      healthBenefits: ['Made with natural jaggery', 'Rich in healthy fats', 'No refined sugar']
+    },
   ];
 
   const nuttyProducts = [
-    { name: 'Nut Cookies', price: 150, image: nuttyCookies },
-    { name: 'Ghee Nutty Cookies', price: 150, image: nuttyCookies },
-    { name: 'Choco Chips Cookies', price: 150, image: nuttyCookies },
+    { 
+      name: 'Nut Cookies', 
+      price: 150, 
+      image: nuttyCookies,
+      ingredients: ['Wheat flour', 'Almonds', 'Cashews', 'Butter', 'Honey'],
+      healthBenefits: ['High in protein', 'Rich in omega-3 fatty acids', 'Natural sweetness']
+    },
+    { 
+      name: 'Ghee Nutty Cookies', 
+      price: 150, 
+      image: nuttyCookies,
+      ingredients: ['Wheat flour', 'Pure ghee', 'Mixed nuts', 'Jaggery'],
+      healthBenefits: ['Loaded with healthy nuts', 'Ghee for better digestion', 'Natural energy boost']
+    },
+    { 
+      name: 'Choco Chips Cookies', 
+      price: 150, 
+      image: nuttyCookies,
+      ingredients: ['Wheat flour', 'Dark chocolate chips', 'Butter', 'Brown sugar'],
+      healthBenefits: ['Antioxidants from dark chocolate', 'Mood-boosting treats', 'Less processed sugar']
+    },
   ];
 
   return (
@@ -36,6 +72,8 @@ const PremiumSection = () => {
               price={product.price}
               variant="premium"
               image={product.image}
+              ingredients={product.ingredients}
+              healthBenefits={product.healthBenefits}
             />
           ))}
         </div>
@@ -52,6 +90,8 @@ const PremiumSection = () => {
                 price={product.price}
                 variant="premium"
                 image={product.image}
+                ingredients={product.ingredients}
+                healthBenefits={product.healthBenefits}
               />
             ))}
           </div>
