@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
+import logo from '@/assets/logo.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,14 +30,13 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <button 
             onClick={() => scrollToSection('home')}
-            className="flex flex-col items-start hover:opacity-80 transition-opacity"
+            className="flex items-center gap-3 hover:opacity-80 transition-opacity"
           >
-            <h1 className="text-2xl md:text-3xl font-display font-bold text-primary">
-              Crunchy Treates
-            </h1>
-            <p className="text-xs md:text-sm text-muted-foreground font-light">
-              from The House of MKBakes
-            </p>
+            <img 
+              src={logo} 
+              alt="Crunchy Treates Logo" 
+              className="h-16 md:h-20 w-auto"
+            />
           </button>
           
           <nav className="hidden lg:flex items-center gap-6">
