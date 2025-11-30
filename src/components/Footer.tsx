@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4">
           <h3 className="text-2xl font-display font-bold text-foreground">
-            Crunchy Treates
+            Crunchy Treats
           </h3>
           <p className="text-muted-foreground">
             The House of MKBakes
@@ -26,7 +26,7 @@ const Footer = () => {
             </a>
           </div>
           <p className="text-sm text-muted-foreground pt-6">
-            © {new Date().getFullYear()} Crunchy Treates – The House of MKBakes. All rights reserved.
+            © {new Date().getFullYear()} Crunchy Treats – The House of MKBakes. All rights reserved.
           </p>
         </div>
       </div>

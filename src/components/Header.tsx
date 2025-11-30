@@ -34,7 +34,7 @@ const Header = () => {
           >
             <img 
               src={logo} 
-              alt="Crunchy Treates Logo" 
+              alt="Crunchy Treats Logo" 
               className="h-16 md:h-20 w-auto"
             />
           </button>

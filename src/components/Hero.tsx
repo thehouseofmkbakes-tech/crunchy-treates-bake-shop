@@ -32,7 +32,7 @@ const Hero = () => {
         </Badge>
         
         <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-foreground mb-6 leading-tight">
-          Crunchy Treates
+          Crunchy Treats
         </h2>
         
         <p className="text-xl md:text-2xl font-display text-foreground mb-4">
