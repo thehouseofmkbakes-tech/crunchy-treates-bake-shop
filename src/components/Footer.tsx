@@ -28,6 +28,27 @@ const Footer = () => {
           <p className="text-sm text-muted-foreground pt-6">
             © {new Date().getFullYear()} Crunchy Treats – The House of MKBakes. All rights reserved.
           </p>
+
+          {/* FSSAI license block */}
+          <div className="flex items-center justify-center gap-3 mt-4 text-xs text-muted-foreground">
+            {/* Inline minimal FSSAI mark */}
+            <svg
+              aria-hidden="true"
+              width="28"
+              height="28"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="flex-shrink-0"
+            >
+              <circle cx="32" cy="32" r="30" stroke="currentColor" strokeWidth="2" fill="white" />
+              <text x="50%" y="52%" textAnchor="middle" fontSize="18" fontWeight="700" fill="#116530">FSSAI</text>
+            </svg>
+
+            <div>
+              <div className="leading-none">FSSAI License No: <strong className="text-foreground">22425420000641</strong></div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
