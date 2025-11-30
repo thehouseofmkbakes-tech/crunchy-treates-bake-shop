@@ -25,7 +25,7 @@ const ProductCard = ({ name, price, variant = 'default', image, ingredients, hea
       onClick={() => setIsFlipped(!isFlipped)}
     >
       <div 
-        className={`relative w-full h-full transition-transform duration-700 transform-style-3d ${
+        className={`relative w-full min-h-[360px] transition-transform duration-700 transform-style-3d ${
           isFlipped ? 'rotate-y-180' : ''
         }`}
       >
