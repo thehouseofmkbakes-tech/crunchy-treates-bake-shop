@@ -18,7 +18,7 @@ const BakesCard = ({ title, description, items, image, ingredients, healthBenefi
       onClick={() => setIsFlipped(!isFlipped)}
     >
       <div 
-        className={`relative w-full h-full transition-transform duration-700 transform-style-3d ${
+        className={`relative w-full min-h-[420px] transition-transform duration-700 transform-style-3d ${
           isFlipped ? 'rotate-y-180' : ''
         }`}
       >
